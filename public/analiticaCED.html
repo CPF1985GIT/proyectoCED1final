@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indicadores - Informes MoodleCED - Extracción de datos - Propaca - Analítica - Licencias Ti</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <button onclick="navigateTo('extraccion.html')">Extracción de datos</button>
+    <button onclick="navigateTo('informes-moodleced.html')">Informes MoodleCED</button>
+    <button onclick="navigateTo('indicadores.html')">Indicadores</button>
+    <button onclick="navigateTo('propacaCED.html')">Propaca</button>
+    <button onclick="navigateTo('analiticaCED.html')">Analítica</button>
+    <button onclick="navigateTo('insumosTi.html')">Licencias Ti</button> 
+    <button onclick="navigateTo('index.html')">salir</button>  
+  </div>
+  <div class="wrapper">
+  
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <div class="header">
+        <h1>Cursos</h1>
+      </div>
+      <div class="stats-container">
+        <div class="stat-card">
+          <h3>Total de Cursos</h3>
+          <p id="totalCursos">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Cursos Activos</h3>
+          <p id="cursosActivos">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Cursos Inactivos</h3>
+          <p id="cursosInactivos">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Inicio Más Temprano</h3>
+          <p id="inicioMasTemprano">N/A</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

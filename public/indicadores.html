@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indicadores - Informes MoodleCED - Extracción de datos - Propaca - Analítica - Licencias Ti</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <button onclick="navigateTo('extraccion.html')">Extracción de datos</button>
+    <button onclick="navigateTo('informes-moodleced.html')">Informes MoodleCED</button>
+    <button onclick="navigateTo('indicadores.html')">Indicadores</button>
+    <button onclick="navigateTo('propacaCED.html')">Propaca</button>
+    <button onclick="navigateTo('analiticaCED.html')">Analítica</button>
+    <button onclick="navigateTo('insumosTi.html')">Licencias Ti</button>
+    <button onclick="navigateTo('index.html')">salir</button>  
+  </div>
+  <div id="content">
+    <h2>Indicadores</h2>
+    <div class="powerbi-container">
+      <iframe
+        id="powerbi-iframe"
+        src="https://app.powerbi.com/view?r=eyJrIjoiZmM4ZGExMzMtYWI4Yy00OGJjLTg5MzQtYThmMjhiYTVmYWYyIiwidCI6IjM2MDIzZjZiLTU3MzAtNDZhNy1iYWVlLTU4YjE1MjE4YmJmYyIsImMiOjR9"
+        frameborder="0"
+        allowFullScreen="true"
+        class="powerbi-embed"
+      ></iframe>
+    </div>
+    <button onclick="generatePDF4()">Descargar PDF</button>
+    <div id="reportContent">  
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

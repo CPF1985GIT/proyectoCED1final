@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informes MoodleCED</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sidebar">
+    <button onclick="navigateTo('extraccion.html')">Extracción de datos</button>
+    <button onclick="navigateTo('informes-moodle.html')">Informes MoodleCED</button>
+    <button onclick="navigateTo('indicadores.html')">Indicadores</button>
+    <button onclick="navigateTo('propacaCED.html')">Propaca</button>
+    <button onclick="navigateTo('analiticaCED.html')">Analítica</button>
+    <button onclick="navigateTo('insumosTi.html')">Licencias Ti</button>
+    <button onclick="navigateTo('index.html')">salir</button>  
+  </div>
+
+  <div id="content">
+    <h1>Informes de datos Moodle</h1>
+
+    <!-- Menú Desplegable para seleccionar tipo de informe -->
+    <label for="reportType">Seleccionar Informe:</label>
+    <select id="reportType">
+      <option value="courses">Cursos</option>
+      <option value="students">Alumnos</option>
+      <!-- se pueden agregar más opciones aquí -->
+    </select>
+
+    <!-- Agregar filtro para cursos visibles/ocultos -->
+    <label for="visibilityFilter">Filtro disponibilidad:</label>
+    <select id="visibilityFilter">
+      <option value="all">Todos</option>
+      <option value="visible">Visible</option>
+      <option value="hidden">Oculto</option>
+    </select>
+
+
+    <!-- Botón para generar los datos -->
+     <button onclick="loadReport()">Generar Datos</button>
+    <!--<button onclick="syncAndLoadReport()">Generar Datos</button>-->
+
+    <!-- Contenido del informe -->
+    <div id="reportContent">
+      <!-- Aquí se mostrarán los datos del informe generado -->
+    </div>
+
+
+
+    <ul id="lista-cursos">
+      <!-- Aquí se generarán los cursos dinámicamente -->
+    </ul>
+    
+    <div id="contador">
+      <!-- Aquí se mostrarán los contadores -->
+    </div>
+
+    <!-- Botón para descargar el PDF -->
+    <button onclick="validateAndGeneratePDF()">Descargar PDF</button>
+  </div>
+</body>
+</html>

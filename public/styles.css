@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background: #34495E;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-direction: column;
+
+  }
+  
+  .powerbi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 20px;
+  }
+  
+  .powerbi-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  #content {
+    padding: 20px;
+    flex: 1;  
+    overflow-y: auto;
+  }
+  #generate-pdf {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #generate-pdf:hover {
+    background-color: #0056b3;
+  }
+
+  .layout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover, .sidebar ul li.active a {
+    background-color: #495057;
+    border-radius: 5px;
+  }
+
+
+  .sidebar button:hover {
+    background: #1ABC9C;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  .table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.table th {
+  background-color: #f4f4f4;
+}
+main {
+  padding: 20px;
+}
+#filtros {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#lista-cursos {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#lista-cursos li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contador {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#reportContent table {
+  width: 100%;
+  border-collapse: collapse;
+  page-break-inside: auto;
+}
+
+#reportContent tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
+
+#reportContent td, #reportContent th {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+#reportContent, #contador {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#contador {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.sidebar .logo {
+  text-align: center;
+  padding: 15px;
+  background-color: #23272b;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* Contenido principal */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Tarjetas de estadísticas */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.stat-card p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007bff;
+}

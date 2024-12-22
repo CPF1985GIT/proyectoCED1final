@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicadores - Informes MoodleCED - Extracción de datos - Propaca - Analítica - Licencias Ti</title>  
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <button onclick="navigateTo('extraccion.html')">Extracción de datos</button>
+        <button onclick="navigateTo('informes-moodleced.html')">Informes MoodleCED</button>
+        <button onclick="navigateTo('indicadores.html')">Indicadores</button>
+        <button onclick="navigateTo('propacaCED.html')">Propaca</button>
+        <button onclick="navigateTo('analiticaCED.html')">Analítica</button>
+        <button onclick="navigateTo('insumosTi.html')">Licencias Ti</button>
+        <button onclick="navigateTo('index.html')">salir</button>  >
+      </div>
+      <div id="content">
+        <h2>Extracción de datos desde Moodle</h2>
+    <!-- Formulario para seleccionar tipo de datos -->
+    <form id="extraccionForm">
+        <label for="tipoDato">Seleccionar tipo de dato:</label>
+        <select id="tipoDato" name="tipoDato">
+            <option value="cursos">Cursos</option>
+            <option value="alumnos">Alumnos</option>
+        </select>
+
+        <button type="button" onclick="extraerDatos()">Extraer Datos</button>
+    </form>
+
+    <!-- Mensaje de resultado -->
+    <p id="resultado"></p>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

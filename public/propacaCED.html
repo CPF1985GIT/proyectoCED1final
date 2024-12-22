@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indicadores - Informes MoodleCED - Extracción de datos - Propaca - Analítica - Licencias Ti</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <button onclick="navigateTo('extraccion.html')">Extracción de datos</button>
+    <button onclick="navigateTo('informes-moodleced.html')">Informes MoodleCED</button>
+    <button onclick="navigateTo('indicadores.html')">Indicadores</button>
+    <button onclick="navigateTo('propacaCED.html')">Propaca</button>
+    <button onclick="navigateTo('analiticaCED.html')">Analítica</button>
+    <button onclick="navigateTo('insumosTi.html')">Licencias Ti</button> 
+    <button onclick="navigateTo('index.html')">salir</button>  
+  </div>
+  <div id="content">
+        <h3>
+             &nbsp;
+           PROPACA - 2024
+          </h3>       
+<div class="row">
+  <div class="col-lg-12">
+        <div class="box">
+            <header>
+                <div class="icons"><i class="fa fa-table"></i></div>
+                <h5>LICENCIAS Y SUSCRIPCIONES</h5>
+            </header>
+            <div id="collapse4" class="body">
+                <table id="dataTable" class="table table-bordered table-condensed table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>NOMBRE LICENCIA O SUSCRIPCIÓN</th>
+                        <th>CANTIDAD</th>
+                        <th>MONTO DOLAR USD$</th>
+                        <th>IVA USD$</th>
+                        <th>TOTAL DOLAR</th>
+                        <th>MONTO SOLICITADO $CLP</th>
+                        <th>VENCIMIENTO</th>
+                        <th>PERTENECE A</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>3D VISTA</td>
+                                <td>1 unid.</td>
+                                <td>USD$ 750</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            <tr>
+                                <td>ADOBE SUITE CLOUD ENTERPRISE</td>
+                                <td>5 unid.</td>
+                                <td>USD$ 6.250</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            <tr>
+                                <td>ADOBE ACROBAT PRO DC</td>
+                                <td>2 unid.</td>
+                                <td>USD$ 640</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            <tr>
+                                <td>OFFICE 365</td>
+                                <td>7 unid.</td>
+                                <td>USD$ 1.050</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            <tr>
+                                <td>OFFICE 365</td>
+                                <td>7 unid.</td>
+                                <td>USD$ 1.050</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CENTRO IDIOMAS</td>
+                            </tr>
+                            <tr>
+                                <td>POWER BI</td>
+                                <td>1 unid.</td>
+                                <td>USD$ 120</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            <tr>
+                                <td>POWTOON</td>
+                                <td>1 unid.</td>
+                                <td>USD$ 1.500</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            <tr>
+                                <td>ARTICULATE 360 TEAM - STORYLINE</td>
+                                <td>1 unid.</td>
+                                <td>USD$ 1.399</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>CED</td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td>TOTAL</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+    <!-- .col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="box">
+            <header>
+                <h5>DOMINIOS</h5>
+                <div class="toolbar">
+                    
+
+
+                </div>
+            </header>
+            <div id="stripedTable" class="body collapse in">
+                <table class="table table-striped responsive-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>WEB</th>
+                            <th>TIPO</th>
+                            <th>VALOR</th>
+                            <th>VENCIMIENTO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>www.cedarmada.cl</td>
+                            <td>Smith</td>
+                            <td>50000</td>
+                            <td>18 DE JUNIO 2028</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>www.educacionnaval.cl</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                            <td>03 OCTUBRE 2024</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>www.abarlovento.cl</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                            <td>16 AGOSTO 2024</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>www.centroidiomas.cl</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>29 MARZO 2029</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>www.ethosnaval.cl</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>30 SEPTIEMBRE 2023</td>
+                        </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-6 -->
+
+    <!-- .col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="box">
+            <header>
+                <h5>CERTIFICADOS SSL</h5>
+                <div class="toolbar">
+                    
+
+
+                </div>
+            </header>
+            <div id="stripedTable" class="body collapse in">
+                <table class="table table-striped responsive-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>WEB</th>
+                            <th>CANTIDAD</th>
+                            <th>MONTO DOLAR USD$</th>
+                            <th>IVA</th>
+                            <th>TOTAL DOLAR</th>
+                            <th>TOTAL CLP</th>
+                            <th>VENCIMIENTO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>www.cedarmada.cl</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>www.educacionnaval.cl</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>www.abarlovento.cl</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>www.centroidiomas.cl</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>www.ethosnaval.cl</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+
+
+
+
+
+
+                        </div>
+                        <!-- /.inner -->
+                    </div>
+                    <!-- /.outer -->
+                </div>
+               
+            <script src="assets/js/style-switcher.js"></script>
+        </body>
+
+</html>
